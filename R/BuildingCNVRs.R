@@ -9,12 +9,12 @@ BuildingCNVRs<- function()
 
   #setwd(system.file("unitTests", "data", "makewindows", package="HelloRanges"))
 
-  Window <- bedtools_makewindows("-g test.genome -w 20")
-  bin<-eval(Window)
-  write.table(bin, file="window.bed", quote=F, sep="\t", row.names=F, col.names=F)
-  df<-read.table('window.bed')
-  df1<-df[,c(3:5)]
-  write.table(df1,file="window.bed", quote=F, sep="\t", row.names=F, col.names=F)
+  #Window <- bedtools_makewindows("-g test.genome -w 20")
+  #bin<-eval(Window)
+  #write.table(bin, file="window.bed", quote=F, sep="\t", row.names=F, col.names=F)
+  #df<-read.table('window.bed')
+  #df1<-df[,c(3:5)]
+  #write.table(df1,file="window.bed", quote=F, sep="\t", row.names=F, col.names=F)
 
 
   count.case<-bedtools_intersect("-a window.bed -b case.bed -c")
