@@ -131,5 +131,5 @@ for(chr in type)
  # CNVR.final1<-rbind(CNVR.final1,selection)
   
 #}
-write.table(CNVRs.final1, file= "FinalCNVRs.txt" , sep="\t", col.names = F, row.names = F)
+write.table(CNVRs.final, file= "FinalCNVRs.txt" , sep="\t", col.names = F, row.names = F)
 }
