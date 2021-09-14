@@ -72,7 +72,9 @@ Output generated in Step 1:
 
 ## Step 2 - Clustering
 To identify those CNVRs in the proximity of each other with the similar percentage of case samples coverage, PeakCNV performs clustering step. In this step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs. For example, in the below image, the optimal eps value is around a distance of 0.15.
+
 ![2Om1mD8](https://user-images.githubusercontent.com/12238056/133217401-3d799fba-b066-4eb7-9553-c54bcafb0a91.png)
+
 
 ```
 PeakCNV(run.to = 2)
@@ -128,13 +130,13 @@ Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/t
 
 | Chr | Start | End | #case | Cluster-NO |
 | :---: | :---: | :---: | :---: | :---: |  
-| 1 | 6742281 | 6742903 | 15 | 1 |
+| 1 | 6742281 | 6742903 | 15 | 7 |
 
 3. Selected CNVRs
 
 | Score | #chr | Start | End | #case | Cluster-NO | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
-| 56 | 21 | 6742281 | 6742903 | 15 |	225.86 | 0 |
+| 56 | 21 | 6742281 | 6742903 | 15 |	7 | 
 
 ## Reference
 ```
