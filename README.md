@@ -10,10 +10,12 @@ PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Sele
 
 - [Installation](#installation)
 - [PeakCNV analysis workflow](#peakCNV-analysis-workflow)
+- [Details of intermediate functions and file formats](#Details-of-intermediate-functions-and-file-formats)
 - [Arguments](#arguments)
 - [How to use](#how-to-use)
 - [Reference](#reference)
 - [Author Info](#author-info)
+- [Acknowledgements](#Acknowledgements)
 - [License](#license)
 
 
@@ -137,17 +139,24 @@ Please consider citing the follow paper when you use this code.
   Authors={}
 }
 ```
+## Contacts
+
+I will be pleased to address any question or concern about the PeakCNV package:
+In case of queries, please email: mahdieh.labani@students.mq.edu.au
+
+### People who contributed to the Control-FREEC idea and code:
+* Mahdieh Labani
+* Ali Afrasiabi
+* Amin Beheshti
+* Shahab S.Band
+* Hamid Alinejad-Rokny 
+## Acknowledgements
+This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship.
+
+
 ## License
 
 This package is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 3, as published by the Free Software Foundation.
 
 A copy of the GNU General Public License, version 3, is available at https://www.r-project.org/Licenses/GPL-3
-
-## Author Info
-
-In case of queries, please email: mahdieh.labani@students.mq.edu.au
-
-
-
-
 
