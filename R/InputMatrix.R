@@ -5,12 +5,12 @@ InputMatrix<-function()
   df <- read.table("intersect.bed",header = FALSE, sep="\t",stringsAsFactors=FALSE, quote="")
   No <- read.table("overlap_Bin_Case.bed")#,header = FALSE, sep="\t",stringsAsFactors=FALSE, quote="")
   Number<-unique(df$V1)
-  No$V2=No$V2-2;#remove it puts in building cnvrs
-  No<-No[,c(1,2,3,6)]#remove it puts in building cnvrs
+  #No$V2=No$V2-2;#remove it puts in building cnvrs
+  #No<-No[,c(1,2,3,6)]#remove it puts in building cnvrs
 
   for(k in Number)
   {
-
+    print( paste("chromosome: ", k)) 
     row<-data.frame();
     col<-data.frame();
     f<-data.frame();
@@ -40,13 +40,13 @@ InputMatrix<-function()
 
         {
           c<-df1[df1$V2==col[i,1],];
-          print('length c');
+          #print('length c');
           d<-df1[df1$V2==row[1,j],];
-          print('length d');
+          #print('length d');
           total <- rbind(c,d);
           f[i,j]<-sum(duplicated(total$V7));
           print(f[i,j])
-          print('ok')
+          #print('ok')
           subtract[i,j]<-abs(f[i,i]-f[i,j]);
           print(subtract[i,j])
           print(i);
