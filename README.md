@@ -79,16 +79,16 @@ Output generated in Step 2:
 | Clustering | list of CNVRs with their cluster number | Chromosome, Start position, End position, sample number, cluster number |
 
 ## Step 3 - Selection
-To identify those CNVRs in the proximity of each other with the similar percentage of case samples coverage, PeakCNV performs clustering step. 
-
+PeakCNV selects the most independent CNVRs fro each cluster. 
 
 ```
-PeakCNV(run.to = 2)
+PeakCNV(run.to = 3)
 ```
-Output generated in Step 2:
+Output generated in Step 3:
 | Filename | Description | Required fields |
 | :---: | :---: | :---: | 
-| Clustering | list of CNVRs with their cluster number | Chromosome, Start position, End position, sample number, cluster number |
+| FinalCNVRs | list of selected CNVRs | Score, Chromosome, Start position, End position, sample number, cluster number |
+
 ## How to use
 By default, PeakCNV runs in the current working directory unless specified by the user. By default, results will be saved in the working directory. In clustering step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs.
 ```
@@ -114,9 +114,9 @@ Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/t
 
 1. CNVRs
 
-| Chr | Start | End | #Sample-Id | #case | #control | p-value |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | 6742281 | 6742903 | SP7890 | 15 | 30 | 0.02 |
+| Chr | Start | End | 
+| :---: | :---: | :---: |
+| 1 | 6742281 | 6742903 | 
 
 2. clustered CNVRs
 
