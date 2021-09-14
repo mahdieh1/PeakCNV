@@ -122,14 +122,14 @@ for(chr in type)
   write.table(final.merge, file=paste(chr, "selection.txt", sep="") , sep="\t", col.names = F, row.names = F)
   CNVRs.final<-rbind(CNVRs.final,final.merge)
 }
-type<-unique(data$V1)
-CNVR.final1<-data.frame();
-for (chromosome in type)
-{
-  print(i)
-  selection<-read.table(file=paste(i, "selection", sep=""),header = FALSE, sep="\t",stringsAsFactors=FALSE, quote="")
-  CNVR.final1<-rbind(CNVR.final1,selection)
+#type<-unique(data$V1)
+#CNVR.final1<-data.frame();
+#for (chromosome in type)
+#{
+#  print(i)
+ # selection<-read.table(file=paste(i, "selection", sep=""),header = FALSE, sep="\t",stringsAsFactors=FALSE, quote="")
+ # CNVR.final1<-rbind(CNVR.final1,selection)
   
-}
+#}
 write.table(CNVRs.final1, file= "FinalCNVRs.txt" , sep="\t", col.names = F, row.names = F)
 }
