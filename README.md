@@ -11,7 +11,7 @@ PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Sele
 - [Installation](#installation)
 - [PeakCNV analysis workflow](#peakCNV-analysis-workflow)
 - [Arguments](#arguments)
-- [Usage example](#Usage-example)
+- [How to use](#how-to-use)
 - [Reference](#reference)
 - [Author Info](#author-info)
 - [License](#license)
@@ -50,8 +50,8 @@ By default, the PeakCNV() function runs the entire workflow. However, it is poss
 | working.dir	| String | Working directory | current working directory
 
 
-## Usage example
-By default, PeakCNV runs in the current working directory unless specified by the user. To run PeakCNV on genome assembly hg18 instead of hg19, please change test.genome in the working directory. By default, results will be saved in the working directory. In clustering step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs.
+## How to use
+By default, PeakCNV runs in the current working directory unless specified by the user. By default, results will be saved in the working directory. In clustering step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs.
 ```
 library("PeakCNV")
 ```
