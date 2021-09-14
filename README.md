@@ -24,7 +24,7 @@ MutSpot runs on R (requires at least 3.2.0). Install the package from Github usi
 ```
 install.packages("devtools")
 library(devtools)
-install_github("mahdieh1/PeakCNV", subdir="Src")
+install_github("mahdieh1/PeakCNV")
 ```
 Alternatively, the package may downloaded from Github and installed in R:
 ```
