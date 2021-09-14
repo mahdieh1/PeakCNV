@@ -2,7 +2,7 @@
 Clustering<-function()
 {
   Chr.cluster<-data.frame();
-  win<-read.table("overlap_del_case.bed")#,header = FALSE, sep="\t",stringsAsFactors=FALSE, quote="")
+  win<-read.table("overlap_Bin_Case.bed")#,header = FALSE, sep="\t",stringsAsFactors=FALSE, quote="")
  # win$V2=win$V2-2;#remove it puts in building cnvrs
   #win<-win[,c(1,2,3,6)]
   f<-unique(win$V1)
