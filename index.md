@@ -4,7 +4,8 @@
 
 PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Selection.  PeakCNV first computes the genome-wide probability of each base pair to be deleted or duplicated in case and control samples using the Fisher exact test resulting in identification of statistically significant CNVRs. Then, PeakCNV groups statistically significant CNVRs into different clusters based on two combined features. The first feature (importance) shows the number of samples in each region after removing the common samples between each two CNVRs. The second one is the distance between CNVRs. Finally, the best CNVR(s) from each cluster will be report as the representative of the cluster
 
-![Picture2](https://user-images.githubusercontent.com/12238056/133256667-0ed804af-a6a1-439c-a9a3-8594b548ddbd.png)
+![Picture2](https://user-images.githubusercontent.com/12238056/133257056-11cf6094-0026-4285-ad81-77c49f40bf72.png)
+
 
 
 
