@@ -2,6 +2,7 @@
 
 ## PeakCNV: A Multi-Feature Ranking Algorithm-based tool for Genome-wide Copy Number Variation-association study 
 
+**PeakCNV** is a tool for detection of genome-wide CNV-phenotype association study using machine learning techniques developed by [BioMedical Machine Learning Lab(BML)](https://www.unsw.edu.au/engineering/our-people/hamid-alinejad-rokny), and [Data Analytics Lab](https://data-science-group.github.io/).
 PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Selection.  PeakCNV first computes the genome-wide probability of each base pair to be deleted or duplicated in case and control samples using the Fisher exact test resulting in identification of statistically significant CNVRs. Then, PeakCNV groups statistically significant CNVRs into different clusters based on two combined features. The first feature (importance) shows the number of samples in each region after removing the common samples between each two CNVRs. The second one is the distance between CNVRs. Finally, the best CNVR(s) from each cluster will be report as the representative of the cluster
 
 ![Picture2](https://user-images.githubusercontent.com/12238056/133257056-11cf6094-0026-4285-ad81-77c49f40bf72.png)
@@ -24,7 +25,7 @@ PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Sele
 
 ## Installation
 
-MutSpot runs on R (requires at least 3.2.0). Install the package from Github using the following R commands.
+PeakCNV runs on R (requires at least 3.2.0). Install the package from Github using the following R commands.
 
 ```
 install.packages("devtools")
@@ -153,13 +154,15 @@ In case of queries, please email: mahdieh.labani@students.mq.edu.au
 * Amin Beheshti
 * Shahab S.Band
 * Hamid Alinejad-Rokny 
-## Acknowledgements
-This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship.
-
 
 ## License
 
 This package is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 3, as published by the Free Software Foundation.
 
 A copy of the GNU General Public License, version 3, is available at https://www.r-project.org/Licenses/GPL-3
+
+## Acknowledgements
+This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship.
+
+![BML Lab_v2](https://user-images.githubusercontent.com/12238056/133267975-c0ff32b5-18c2-4660-92f8-9ff8714faab6.jpg)
 
