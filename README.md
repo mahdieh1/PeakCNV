@@ -50,7 +50,7 @@ By default, the PeakCNV() function runs the entire workflow. However, it is poss
 | working.dir	| String | Working directory | current working directory
 
 ## Details of intermediate functions and file formats
-| Parameter | Type |
+| Step | run.to |
 | :---: | :---: |
 | 1 | 1 |
 | 2 | 2 |
