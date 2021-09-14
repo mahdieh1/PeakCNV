@@ -10,7 +10,7 @@ PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Sele
 
 - [Installation](#installation)
 - [PeakCNV analysis workflow](#peakCNV-analysis-workflow)
-- [Details of intermediate functions and file formats](#Details-of-intermediate-functions-and-file-formats)
+- [Details of intermediate functions and file formats](#details-of-intermediate-functions-and-file-formats)
 - [Arguments](#arguments)
 - [How to use](#how-to-use)
 - [Reference](#reference)
@@ -144,7 +144,7 @@ Please consider citing the follow paper when you use this code.
 I will be pleased to address any question or concern about the PeakCNV package:
 In case of queries, please email: mahdieh.labani@students.mq.edu.au
 
-### People who contributed to the Control-FREEC idea and code:
+### People who contributed to the PeakCNV idea and code:
 * Mahdieh Labani
 * Ali Afrasiabi
 * Amin Beheshti
