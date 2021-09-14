@@ -1,4 +1,4 @@
-
+## PeakCNV
 
 ## PeakCNV: A Multi-Feature Ranking Algorithm-based tool for Genome-wide Copy Number Variation-association study 
 
@@ -52,8 +52,9 @@ By default, the PeakCNV() function runs the entire workflow. However, it is poss
 | working.dir	| String | Working directory | current working directory
 
 ## Details of intermediate functions and file formats
+
 | Step | run.to |
-| :---: | :---: |
+| :--: | :----: |
 | 1 | 1 |
 | 2 | 2 |
 | 3 | 3 |
@@ -64,6 +65,7 @@ PeakCNV builds deletion and duplication CNVR maps for cases and controls by merg
 PeakCNV(run.to = 1)
 ```
 Output generated in Step 1:
+
 | Filename | Description | Required fields |
 | :---: | :---: | :---: | 
 | step1 | list of positions that probability of being either deleted or duplicated in cases versus controls | Chromosome, Start position, End position |
@@ -76,6 +78,7 @@ To identify those CNVRs in the proximity of each other with the similar percenta
 PeakCNV(run.to = 2)
 ```
 Output generated in Step 2:
+
 | Filename | Description | Required fields |
 | :---: | :---: | :---: | 
 | Clustering | list of CNVRs with their cluster number | Chromosome, Start position, End position, sample number, cluster number |
@@ -87,6 +90,7 @@ PeakCNV selects the most independent CNVRs fro each cluster.
 PeakCNV(run.to = 3)
 ```
 Output generated in Step 3:
+
 | Filename | Description | Required fields |
 | :---: | :---: | :---: | 
 | FinalCNVRs | list of selected CNVRs | Score, Chromosome, Start position, End position, sample number, cluster number |
