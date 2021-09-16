@@ -5,6 +5,8 @@
 **PeakCNV** is a tool for detection of genome-wide CNV-phenotype association study using machine learning techniques developed by [BioMedical Machine Learning Lab(BML)](https://www.unsw.edu.au/engineering/our-people/hamid-alinejad-rokny), and [Data Analytics Lab](https://data-science-group.github.io/).
 PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Selection.  PeakCNV first computes the genome-wide probability of each base pair to be deleted or duplicated in case and control samples using the Fisher exact test resulting in identification of statistically significant CNVRs. Then, PeakCNV groups statistically significant CNVRs into different clusters based on two combined features. The first feature (importance) shows the number of samples in each region after removing the common samples between each two CNVRs. The second one is the distance between CNVRs. Finally, the best CNVR(s) from each cluster will be report as the representative of the cluster
 
+![web2](https://user-images.githubusercontent.com/12238056/133551756-ead2fd0b-21dc-4595-9d09-ba36b552b516.jpg)
+
 
 ## Table of Contents
 
@@ -30,7 +32,7 @@ install_github("mahdieh1/PeakCNV")
 ```
 Alternatively, the package may downloaded from Github and installed in R:
 ```
-# Clone/download MutSpot into the current working dirctory with the following command: git clone https://github.com/mahdieh1/PeakCNV.git
+# Clone/download PeakCNV into the current working dirctory with the following command: git clone https://github.com/mahdieh1/PeakCNV.git
 ```
 
 
@@ -62,7 +64,7 @@ By default, the PeakCNV() function runs the entire workflow. However, it is poss
 ## Step 1 - Building CNVRs
 PeakCNV builds deletion and duplication CNVR maps for cases and controls by merging genomic coordinates of deletion and duplication type of CNVs, respectively. Then, PeakCNV estimates the probability of being either deleted or duplicated in cases versus controls for each base pair of these maps using one-tailed Fisher’s exact test. The output of this step is CNVRs that are significantly more frequently duplicated or deleted in cases or controls individuals. 
 ```
-PeakCNV(run.to = 1)
+PeakCNV(1)
 ```
 Output generated in Step 1:
 
@@ -77,7 +79,7 @@ To identify those CNVRs in the proximity of each other with the similar percenta
 
 
 ```
-PeakCNV(run.to = 2)
+PeakCNV(2)
 ```
 Output generated in Step 2:
 
@@ -89,7 +91,7 @@ Output generated in Step 2:
 PeakCNV selects the most independent CNVRs fro each cluster. 
 
 ```
-PeakCNV(run.to = 3)
+PeakCNV(3)
 ```
 Output generated in Step 3:
 
@@ -106,13 +108,13 @@ PeakCNV()
 Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/test-data into your working directory.
 
 #### Input files ####
-1. Case:
+1. Case CNVs (case.bed):
 
 | Chr | Start | End | Sample-Id |
 | :---: | :---: | :---: | :---: |
 | 1 | 6742281 | 6742903 | SP7890 |
 
-2. Control CNVs
+2. Control CNVs (control.bed):
 
 | Chr | Start | End | Sample-Id |
 | :---: | :---: | :---: | :---: |
@@ -120,19 +122,19 @@ Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/t
 
 #### Output files: ####
 
-1. CNVRs
+1. CNVRs (Step1.bed):
 
 | Chr | Start | End | 
 | :---: | :---: | :---: |
 | 1 | 6742281 | 6742903 | 
 
-2. clustered CNVRs
+2. clustered CNVRs (clustering.txt):
 
 | Chr | Start | End | #case | Cluster-NO |
 | :---: | :---: | :---: | :---: | :---: |  
 | 1 | 6742281 | 6742903 | 15 | 7 |
 
-3. Selected CNVRs
+3. Selected CNVRs (selection.txt):
 
 | Score | #chr | Start | End | #case | Cluster-NO | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
