@@ -1,7 +1,8 @@
-# PeakCNV
-A Multi-Feature Ranking Algorithm-based tool for Genome-wide Copy Number Variation-association study 
+PeakCNV
+==================================
 
-----------------------------------------------------------------------------------------------------------------
+## A Multi-Feature Ranking Algorithm-based tool for Genome-wide Copy Number Variation-association study 
+
 PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Selection.  PeakCNV first computes the genome-wide probability of each base pair to be deleted or duplicated in case and control samples using the Fisher exact test resulting in identification of statistically significant CNVRs. Then, PeakCNV groups statistically significant CNVRs into different clusters based on two combined features. The first feature (importance) shows the number of samples in each region after removing the common samples between each two CNVRs. The second one is the distance between CNVRs. Finally, the best CNVR(s) from each cluster will be report as the representative of the cluster
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -18,6 +19,7 @@ PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Sele
 - [Acknowledgements](#Acknowledgements)
 - [License](#license)
 
+------------------------------------------------------------------------------------------------------------------------
 
 ## Installation
 
@@ -33,6 +35,7 @@ Alternatively, the package may downloaded from Github and installed in R:
 # Clone/download PeakCNV into the current working dirctory with the following command: git clone https://github.com/mahdieh1/PeakCNV.git
 ```
 
+------------------------------------------------------------------------------------------------------------------------
 
 ## PeakCNV analysis workflow
 
@@ -43,6 +46,7 @@ The full PeakCNV workflow includes the following 3 steps:
 
 By default, the PeakCNV() function runs the entire workflow. However, it is possible to run specific steps of the workflow by specifiying the run.to parameter (see full documentation in https://mahdieh1.github.io/PeakCNV/).
 
+------------------------------------------------------------------------------------------------------------------------
 
 ## Arguments
 
@@ -50,6 +54,8 @@ By default, the PeakCNV() function runs the entire workflow. However, it is poss
 | :---: | :---: | :---: | :---: |
 | run.to | Numeric | Steps to run | 1,2,3 |
 | working.dir	| String | Working directory | current working directory
+
+------------------------------------------------------------------------------------------------------------------------
 
 ## Details of intermediate functions and file formats
 | Step | run.to |
@@ -90,6 +96,8 @@ Output generated in Step 3:
 | Filename | Description | Required fields |
 | :---: | :---: | :---: | 
 | FinalCNVRs | list of selected CNVRs | Score, Chromosome, Start position, End position, sample number, cluster number |
+
+------------------------------------------------------------------------------------------------------------------------
 
 ## How to use
 By default, PeakCNV runs in the current working directory unless specified by the user. By default, results will be saved in the working directory.  In clustering step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs. For more information about results see the https://mahdieh1.github.io/PeakCNV/.
@@ -134,6 +142,8 @@ Please put input files (case.bed and control.bed) in the working directory. If y
 | :---: | :---: | :---: | :---: | :---: | :---: | 
 | 56 | 21 | 6742281 | 6742903 | 15 |	225.86 | 0 |
 
+------------------------------------------------------------------------------------------------------------------------
+
 ## Reference
 ```
 Please consider citing the follow paper when you use this code.
@@ -141,10 +151,14 @@ Please consider citing the follow paper when you use this code.
   Authors={}
 }
 ```
+------------------------------------------------------------------------------------------------------------------------
+
 ## Contacts
 
 I will be pleased to address any question or concern about the PeakCNV package:
 In case of queries, please email: mahdieh.labani@students.mq.edu.au
+
+------------------------------------------------------------------------------------------------------------------------
 
 ### People who contributed to the PeakCNV idea and code:
 * Mahdieh Labani
@@ -152,9 +166,13 @@ In case of queries, please email: mahdieh.labani@students.mq.edu.au
 * Amin Beheshti
 * Shahab S.Band
 * Hamid Alinejad-Rokny 
+
+------------------------------------------------------------------------------------------------------------------------
+
 ## Acknowledgements
 This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship.
 
+------------------------------------------------------------------------------------------------------------------------
 
 ## License
 
