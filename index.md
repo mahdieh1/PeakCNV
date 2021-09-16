@@ -1,10 +1,6 @@
 PeakCNV
 ==================================
 
-<p align="left">
-  <img src="https://user-images.githubusercontent.com/12238056/133269496-c8e67136-be24-4a25-a32b-8209b2b467da.jpg" />
-</p>
-
 ## A Multi-Feature Ranking Algorithm-based tool for Genome-wide Copy Number Variation-association study 
 
 **PeakCNV** is a tool for detection of genome-wide CNV-phenotype association study using machine learning techniques developed by [BioMedical Machine Learning Lab(BML)](https://www.unsw.edu.au/engineering/our-people/hamid-alinejad-rokny), and [Data Analytics Lab](https://data-science-group.github.io/).
