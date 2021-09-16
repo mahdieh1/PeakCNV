@@ -5,7 +5,8 @@
 **PeakCNV** is a tool for detection of genome-wide CNV-phenotype association study using machine learning techniques developed by [BioMedical Machine Learning Lab(BML)](https://www.unsw.edu.au/engineering/our-people/hamid-alinejad-rokny), and [Data Analytics Lab](https://data-science-group.github.io/).
 PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Selection.  PeakCNV first computes the genome-wide probability of each base pair to be deleted or duplicated in case and control samples using the Fisher exact test resulting in identification of statistically significant CNVRs. Then, PeakCNV groups statistically significant CNVRs into different clusters based on two combined features. The first feature (importance) shows the number of samples in each region after removing the common samples between each two CNVRs. The second one is the distance between CNVRs. Finally, the best CNVR(s) from each cluster will be report as the representative of the cluster
 
-![web2](https://user-images.githubusercontent.com/12238056/133551756-ead2fd0b-21dc-4595-9d09-ba36b552b516.jpg)
+ ![web3](https://user-images.githubusercontent.com/12238056/133552378-d35e0e7c-0c8a-4d77-927a-7b8d87d88824.png)
+
 
 
 ## Table of Contents
