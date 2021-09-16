@@ -1,4 +1,5 @@
-## PeakCNV
+PeakCNV
+==================================
 
 ## A Multi-Feature Ranking Algorithm-based tool for Genome-wide Copy Number Variation-association study 
 
@@ -9,6 +10,7 @@ PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Sele
   <img src="https://user-images.githubusercontent.com/12238056/133552378-d35e0e7c-0c8a-4d77-927a-7b8d87d88824.png" />
 </p>
 
+-----------------------------------------------------------------------------------
 
 ## Table of Contents
 
