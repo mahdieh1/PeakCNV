@@ -21,7 +21,7 @@ PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Sele
 
 ## Installation
 
-MutSpot runs on R (requires at least 3.2.0). Install the package from Github using the following R commands.
+PeakCNV runs on R (requires at least 3.2.0). Install the package from Github using the following R commands.
 
 ```
 install.packages("devtools")
@@ -30,7 +30,7 @@ install_github("mahdieh1/PeakCNV")
 ```
 Alternatively, the package may downloaded from Github and installed in R:
 ```
-# Clone/download MutSpot into the current working dirctory with the following command: git clone https://github.com/mahdieh1/PeakCNV.git
+# Clone/download PeakCNV into the current working dirctory with the following command: git clone https://github.com/mahdieh1/PeakCNV.git
 ```
 
 
