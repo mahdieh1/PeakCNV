@@ -5,8 +5,9 @@
 **PeakCNV** is a tool for detection of genome-wide CNV-phenotype association study using machine learning techniques developed by [BioMedical Machine Learning Lab(BML)](https://www.unsw.edu.au/engineering/our-people/hamid-alinejad-rokny), and [Data Analytics Lab](https://data-science-group.github.io/).
 PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Selection.  PeakCNV first computes the genome-wide probability of each base pair to be deleted or duplicated in case and control samples using the Fisher exact test resulting in identification of statistically significant CNVRs. Then, PeakCNV groups statistically significant CNVRs into different clusters based on two combined features. The first feature (importance) shows the number of samples in each region after removing the common samples between each two CNVRs. The second one is the distance between CNVRs. Finally, the best CNVR(s) from each cluster will be report as the representative of the cluster
 
- ![web3](https://user-images.githubusercontent.com/12238056/133552378-d35e0e7c-0c8a-4d77-927a-7b8d87d88824.png)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12238056/133552378-d35e0e7c-0c8a-4d77-927a-7b8d87d88824.png" />
+</p>
 
 
 ## Table of Contents
@@ -76,7 +77,9 @@ Output generated in Step 1:
 ## Step 2 - Clustering
 To identify those CNVRs in the proximity of each other with the similar percentage of case samples coverage, PeakCNV performs clustering step. In this step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs. For example, in the below image, the optimal eps value is around a distance of 0.15.
 
-![2Om1mD8](https://user-images.githubusercontent.com/12238056/133217401-3d799fba-b066-4eb7-9553-c54bcafb0a91.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12238056/133217401-3d799fba-b066-4eb7-9553-c54bcafb0a91.png" />
+</p>
 
 
 ```
@@ -169,6 +172,6 @@ A copy of the GNU General Public License, version 3, is available at https://www
 ## Acknowledgements
 This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship.
 
-![BML Lab_v2](https://user-images.githubusercontent.com/12238056/133269496-c8e67136-be24-4a25-a32b-8209b2b467da.jpg)
-
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/12238056/133269496-c8e67136-be24-4a25-a32b-8209b2b467da.jpg" />
+</p>
