@@ -115,13 +115,13 @@ Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/t
 Please put input files (case.bed and control.bed) in the working directory. If your CNV list contains chr X or Y, please put it 23,24.
 #### Output files: ####
 
-1. CNVRs (Step1.bed)
+1. CNVRs (Step1.bed):
 
 | Chr | Start | End | 
 | :---: | :---: | :---: |
 | 1 | 6742281 | 6742903 | 
 
-2. clustered CNVRs (clustering.txt)
+2. clustered CNVRs (clustering.txt):
 
 | Chr | Start | End | #case | Cluster-NO |
 | :---: | :---: | :---: | :---: | :---: |  
