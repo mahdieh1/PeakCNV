@@ -16,14 +16,15 @@ PeakCNV consists of three steps: (1) Building CNVRs; (2) Cluster CNVRs; (3) Sele
 
 - [Installation](#installation)
 - [PeakCNV analysis workflow](#peakCNV-analysis-workflow)
-- [Details of intermediate functions and file formats](#details-of-intermediate-functions-and-file-formats)
 - [Arguments](#arguments)
+- [Details of intermediate functions and file formats](#details-of-intermediate-functions-and-file-formats)
 - [How to use](#how-to-use)
 - [Reference](#reference)
 - [Author Info](#author-info)
 - [Acknowledgements](#Acknowledgements)
 - [License](#license)
 
+-----------------------------------------------------------------------------------
 
 ## Installation
 
@@ -39,6 +40,7 @@ Alternatively, the package may downloaded from Github and installed in R:
 # Clone/download PeakCNV into the current working dirctory with the following command: git clone https://github.com/mahdieh1/PeakCNV.git
 ```
 
+-----------------------------------------------------------------------------------
 
 ## PeakCNV analysis workflow
 
@@ -49,6 +51,7 @@ The full PeakCNV workflow includes the following 3 steps:
 
 By default, the PeakCNV() function runs the entire workflow. However, it is possible to run specific steps of the workflow by specifiying the run.to parameter (see full documentation).
 
+-----------------------------------------------------------------------------------
 
 ## Arguments
 
@@ -56,6 +59,8 @@ By default, the PeakCNV() function runs the entire workflow. However, it is poss
 | :---: | :---: | :---: | :---: |
 | run.to | Numeric | Steps to run | 1,2,3 |
 | working.dir	| String | Working directory | current working directory
+
+-----------------------------------------------------------------------------------
 
 ## Details of intermediate functions and file formats
 
@@ -105,6 +110,8 @@ Output generated in Step 3:
 | :---: | :---: | :---: | 
 | FinalCNVRs | list of selected CNVRs | Score, Chromosome, Start position, End position, sample number, cluster number |
 
+-----------------------------------------------------------------------------------
+
 ## How to use
 By default, PeakCNV runs in the current working directory unless specified by the user. By default, results will be saved in the working directory. In clustering step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs.
 ```
@@ -148,6 +155,8 @@ Please put input files (case.bed and control.bed) in the working directory. If y
 | :---: | :---: | :---: | :---: | :---: | :---: | 
 | 56 | 21 | 6742281 | 6742903 | 15 |	7 | 
 
+-----------------------------------------------------------------------------------
+
 ## Reference
 ```
 Please consider citing the follow paper when you use this code.
@@ -155,23 +164,32 @@ Please consider citing the follow paper when you use this code.
   Authors={}
 }
 ```
+-----------------------------------------------------------------------------------
+
 ## Contacts
 
 I will be pleased to address any question or concern about the PeakCNV package:
 In case of queries, please email: mahdieh.labani@students.mq.edu.au
 
 ### People who contributed to the PeakCNV idea and code:
-* Mahdieh Labani
-* Ali Afrasiabi
+
+* Hamid Alinejad-Rokny
 * Amin Beheshti
+* Ali Afrasiabi
 * Shahab S.Band
-* Hamid Alinejad-Rokny 
+* Mahdieh Labani 
+
+-----------------------------------------------------------------------------------
+
 
 ## License
 
 This package is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License, version 3, as published by the Free Software Foundation.
 
-A copy of the GNU General Public License, version 3, is available at https://www.r-project.org/Licenses/GPL-3
+A copy of the GNU General Public License, version 3, is available at  https://www.r-project.org/Licenses/GPL-3
+
+-----------------------------------------------------------------------------------
+
 
 ## Acknowledgements
 This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship.
