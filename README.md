@@ -92,7 +92,7 @@ Output generated in Step 3:
 | FinalCNVRs | list of selected CNVRs | Score, Chromosome, Start position, End position, sample number, cluster number |
 
 ## How to use
-By default, PeakCNV runs in the current working directory unless specified by the user. By default, results will be saved in the working directory.  In clustering step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs. For more information about results see the .
+By default, PeakCNV runs in the current working directory unless specified by the user. By default, results will be saved in the working directory.  In clustering step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs. For more information about results see the https://mahdieh1.github.io/PeakCNV/.
 ```
 library("PeakCNV")
 PeakCNV()
@@ -112,7 +112,8 @@ Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/t
 | :---: | :---: | :---: | :---: |
 | 1 | 6742281 | 6742903 | sa321 |
 
-Please put input files (case.bed and control.bed) in the working directory. If your CNV list contains chr X or Y, please put it 23,24.
+Please put input files (case.bed and control.bed) in the working directory. If your CNV list contains chr X or Y, please replace them with 23,24.
+
 #### Output files: ####
 
 1. CNVRs (Step1.bed):
