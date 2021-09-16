@@ -161,11 +161,11 @@ In case of queries, please email: mahdieh.labani@students.mq.edu.au
 ------------------------------------------------------------------------------------------------------------------------
 
 ### People who contributed to the PeakCNV idea and code:
-* Mahdieh Labani
-* Ali Afrasiabi
+* Hamid Alinejad-Rokny
 * Amin Beheshti
+* Ali Afrasiabi
 * Shahab S.Band
-* Hamid Alinejad-Rokny 
+* Mahdieh Labani  
 
 ------------------------------------------------------------------------------------------------------------------------
 
