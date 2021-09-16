@@ -61,7 +61,7 @@ By default, the PeakCNV() function runs the entire workflow. However, it is poss
 ## Step 1 - Building CNVRs
 PeakCNV builds deletion and duplication CNVR maps for cases and controls by merging genomic coordinates of deletion and duplication type of CNVs, respectively. Then, PeakCNV estimates the probability of being either deleted or duplicated in cases versus controls for each base pair of these maps using one-tailed Fisher’s exact test. The output of this step is CNVRs that are significantly more frequently duplicated or deleted in cases or controls individuals. 
 ```
-PeakCNV(run.to = 1)
+PeakCNV(1)
 ```
 Output generated in Step 1:
 | Filename | Description | Required fields |
@@ -73,7 +73,7 @@ To identify those CNVRs in the proximity of each other with the similar percenta
 ![2Om1mD8](https://user-images.githubusercontent.com/12238056/133217401-3d799fba-b066-4eb7-9553-c54bcafb0a91.png)
 
 ```
-PeakCNV(run.to = 2)
+PeakCNV(2)
 ```
 Output generated in Step 2:
 | Filename | Description | Required fields |
@@ -81,7 +81,7 @@ Output generated in Step 2:
 | Clustering | list of CNVRs with their cluster number | Chromosome, Start position, End position, sample number, cluster number |
 
 ## Step 3 - Selection
-PeakCNV selects the most independent CNVRs fro each cluster. 
+PeakCNV selects the most independent CNVRs from each cluster. 
 
 ```
 PeakCNV(run.to = 3)
@@ -92,7 +92,7 @@ Output generated in Step 3:
 | FinalCNVRs | list of selected CNVRs | Score, Chromosome, Start position, End position, sample number, cluster number |
 
 ## How to use
-By default, PeakCNV runs in the current working directory unless specified by the user. By default, results will be saved in the working directory. In clustering step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs.
+By default, PeakCNV runs in the current working directory unless specified by the user. By default, results will be saved in the working directory.  In clustering step, for each chromosome, PeakCNV asks you the eps value based on the k nearest neighbors(knn) plot. The optimal value is an elbow, where a sharp change in the distance occurs. For more information about results see the .
 ```
 library("PeakCNV")
 PeakCNV()
@@ -100,27 +100,28 @@ PeakCNV()
 Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/test-data into your working directory.
 
 #### Input files ####
-1. Case:
+1. Case CNVs (case.bed):
 
 | Chr | Start | End | Sample-Id |
 | :---: | :---: | :---: | :---: |
 | 1 | 6742281 | 6742903 | SP7890 |
 
-2. Control CNVs
+2. Control CNVs (control.bed):
 
 | Chr | Start | End | Sample-Id |
 | :---: | :---: | :---: | :---: |
 | 1 | 6742281 | 6742903 | sa321 |
 
+Please put input files (case.bed and control.bed) in the working directory. If your CNV list contains chr X or Y, please put it 23,24.
 #### Output files: ####
 
-1. CNVRs
+1. CNVRs (step1.bed)
 
 | Chr | Start | End | 
 | :---: | :---: | :---: |
 | 1 | 6742281 | 6742903 | 
 
-2. clustered CNVRs
+2. clustered CNVRs (
 
 | Chr | Start | End | #case | Cluster-NO |
 | :---: | :---: | :---: | :---: | :---: |  
