@@ -41,7 +41,7 @@ The full PeakCNV workflow includes the following 3 steps:
 2. Clustering process
 3. Selection process
 
-By default, the PeakCNV() function runs the entire workflow. However, it is possible to run specific steps of the workflow by specifiying the run.to parameter (see full documentation).
+By default, the PeakCNV() function runs the entire workflow. However, it is possible to run specific steps of the workflow by specifiying the run.to parameter (see full documentation in https://mahdieh1.github.io/PeakCNV/).
 
 
 ## Arguments
@@ -115,19 +115,19 @@ Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/t
 Please put input files (case.bed and control.bed) in the working directory. If your CNV list contains chr X or Y, please put it 23,24.
 #### Output files: ####
 
-1. CNVRs (step1.bed)
+1. CNVRs (Step1.bed)
 
 | Chr | Start | End | 
 | :---: | :---: | :---: |
 | 1 | 6742281 | 6742903 | 
 
-2. clustered CNVRs (
+2. clustered CNVRs (clustering.txt)
 
 | Chr | Start | End | #case | Cluster-NO |
 | :---: | :---: | :---: | :---: | :---: |  
 | 1 | 6742281 | 6742903 | 15 | 1 |
 
-3. Selected CNVRs
+3. Selected CNVRs (selection.txt)
 
 | Score | #chr | Start | End | #case | Cluster-NO | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
