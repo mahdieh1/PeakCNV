@@ -47,7 +47,7 @@ PeakCNV = function(run.to =c(1,2,3),working.dir = NULL)
   ## Load all required packages ##
   library(HelloRanges)
   library(data.table)
-  library(NbClust)
+  #library(NbClust)
   library(dbscan)
 
   if (1 %in% run.to) {
