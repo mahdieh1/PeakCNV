@@ -35,6 +35,7 @@ BuildingCNVRs<- function()
   new.df[,6]=No.case-new.df[,4];
   new.df[,7]=No.control-new.df[,5];
   
+  new.df<-new.df[!duplicated(new.df[ , c("V1", "V2","V3")]), ]
   for(i in 1:nrow(new.df))
   {
     a <- rbind( c(new.df[i,4],new.df[i,6]), c(new.df[i,5],new.df[i,7]) );
