@@ -28,7 +28,7 @@ Clustering<-function()
     
     subtract<-read.table(file=paste(k, "subtract.txt", sep=""),header = FALSE, sep="\t",stringsAsFactors=FALSE, quote="")
     total<-cbind(df,subtract)
-    if(nrow(total)<5){
+    if(nrow(total)<=5){
       rate=1;
     }
     else
