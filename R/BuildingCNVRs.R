@@ -27,17 +27,18 @@ BuildingCNVRs<- function()
   new.df$V7 <- control$V6;
  
   C<-read.table('case.bed')
-  No.case=length(unique(C$V4));
+  #No.case=length(unique(C$V4));
+  No.case=nrow(C);
   C<-read.table('control.bed')
-  No.control=length(unique(C$V4));
-  
+  #No.control=length(unique(C$V4));
+  No.control=nrow(C);
   new.df[,6]=No.case-new.df[,4];
   new.df[,7]=No.control-new.df[,5];
   
   for(i in 1:nrow(new.df))
   {
     a <- rbind( c(new.df[i,4],new.df[i,6]), c(new.df[i,5],new.df[i,7]) );
-    fisher.result <- fisher.test(x=a,  alternative = "two.sided")
+    fisher.result <- fisher.test(x=a,  alternative = "greater")
     print(i)
     print(fisher.result$p.value)
     new.df[i,8]<-fisher.result$p.value;
