@@ -53,6 +53,8 @@ BuildingCNVRs<- function()
   CNVRs <- new.df[new.df[,8]< threshold,]
   CNVRs<-CNVRs[,c(1,2,3)]
   CNVRs<-CNVRs[!duplicated(CNVRs), ]
+  CNVRs<-CNVRs %>% filter(CNVRs$V3 > CNVRs$V2)
+
   write.table(CNVRs,file="CNVRs.bed", quote=F, sep="\t", row.names=F, col.names=F)
   #Bins<-bedtools_makewindows("-b CNVRs.bed -w 1") 
   #Bins.eval<-eval(Bins) 
