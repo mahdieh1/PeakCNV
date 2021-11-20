@@ -161,16 +161,16 @@ In case of queries, please email: mahdieh.labani@students.mq.edu.au
 ------------------------------------------------------------------------------------------------------------------------
 
 ### People who contributed to the PeakCNV idea and code:
-* Hamid Alinejad-Rokny
-* Amin Beheshti
+* Mahdieh Labani 
 * Ali Afrasiabi
+* Amin Beheshti
 * Shahab S.Band
-* Mahdieh Labani  
+* Hamid Alinejad-Rokny
 
 ------------------------------------------------------------------------------------------------------------------------
 
 ## Acknowledgements
-This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship.
+This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship. Analyses were made possible with High Performance Computing resources provided by the BioMedical Machine Learning Lab with funding from the Australian Government and the UNSW SYDNEY.
 
 ------------------------------------------------------------------------------------------------------------------------
 
