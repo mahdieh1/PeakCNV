@@ -197,5 +197,4 @@ This work was funded by the UNSW Scientia Program Fellowship and the Australian 
 
 <p align="center">
   <img src="(https://user-images.githubusercontent.com/12238056/142732047-b3a09006-a4e5-42f1-9793-44947caab58c.JPEG)" />
-
 </p>
