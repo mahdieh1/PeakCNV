@@ -105,7 +105,7 @@ By default, PeakCNV runs in the current working directory unless specified by th
 library("PeakCNV")
 PeakCNV()
 ```
-Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/test-data into your working directory.
+Download the test data sets from https://github.com/mahdieh1/PeakCNV/tree/main/test-data into your working directory. For this datasets, P-value i
 
 #### Input files ####
 1. Case CNVs (case.bed):
