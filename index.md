@@ -173,11 +173,12 @@ In case of queries, please email: mahdieh.labani@students.mq.edu.au
 
 ### People who contributed to the PeakCNV idea and code:
 
-* Hamid Alinejad-Rokny
-* Amin Beheshti
+* Mahdieh Labani
 * Ali Afrasiabi
 * Shahab S.Band
-* Mahdieh Labani 
+* Amin Beheshti
+* Hamid Alinejad-Rokny
+ 
 
 -----------------------------------------------------------------------------------
 
@@ -195,5 +196,6 @@ A copy of the GNU General Public License, version 3, is available at  https://ww
 This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/12238056/133269496-c8e67136-be24-4a25-a32b-8209b2b467da.jpg" />
+  <img src="(https://user-images.githubusercontent.com/12238056/142732047-b3a09006-a4e5-42f1-9793-44947caab58c.JPEG)" />
+
 </p>
