@@ -196,6 +196,6 @@ A copy of the GNU General Public License, version 3, is available at  https://ww
 This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship. Analyses were made possible with High Performance Computing resources provided by the BioMedical Machine Learning Lab with funding from the Australian Government and the UNSW SYDNEY.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/12238056/142732631-9fbd0e38-1e41-46b7-8613-92aa651a100c.png" />
-"https://user-images.githubusercontent.com/12238056/142732883-b9d91c66-a8a9-485a-8815-b9f2dad226cf.png"
+  <img src=""https://user-images.githubusercontent.com/12238056/142732883-b9d91c66-a8a9-485a-8815-b9f2dad226cf.png" />
+
 
