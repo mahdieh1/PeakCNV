@@ -42,14 +42,26 @@ PeakCNV = function(run.to =c(1,2,3),working.dir = NULL)
     install.packages("dbscan")
 
   }
+if("magrittr" %in% rownames(installed.packages()) == FALSE) {
 
+    print("install [magrittr]")
+    install.packages("magrittr")
 
+  }
+if("dplyr" %in% rownames(installed.packages()) == FALSE) {
+
+    print("install [dplyr]")
+    install.packages("dplyr")
+
+  }
   ## Load all required packages ##
   library(HelloRanges)
   library(data.table)
   #library(NbClust)
   library(dbscan)
-
+  library(dplyr) 
+  library(magrittr)
+  
   if (1 %in% run.to) {
     print("step1: Building CNVRs ...")
     BuildingCNVRs()
