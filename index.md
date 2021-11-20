@@ -88,7 +88,6 @@ To identify those CNVRs in the proximity of each other with the similar percenta
   <img src="https://user-images.githubusercontent.com/12238056/133217401-3d799fba-b066-4eb7-9553-c54bcafb0a91.png" />
 </p>
 
-(https://user-images.githubusercontent.com/12238056/142732631-9fbd0e38-1e41-46b7-8613-92aa651a100c.png)
 
 ```
 PeakCNV(2)
@@ -197,6 +196,5 @@ A copy of the GNU General Public License, version 3, is available at  https://ww
 This work was funded by the UNSW Scientia Program Fellowship and the Australian Research Council Discovery Early Career Researcher Award (DECRA), Macquarie PhD Scholarship and Australian Government Research Training Program (RTP) scholarship. Analyses were made possible with High Performance Computing resources provided by the BioMedical Machine Learning Lab with funding from the Australian Government and the UNSW SYDNEY.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/12238056/142732047-b3a09006-a4e5-42f1-9793-44947caab58c.JPEG" />
+  <img src="https://user-images.githubusercontent.com/12238056/142732631-9fbd0e38-1e41-46b7-8613-92aa651a100c.png" />
 </p>
-![test2 - Copy](https://user-images.githubusercontent.com/12238056/142732284-a68f8b5d-60c6-4dad-8c7e-4a73e094b880.JPEG)
