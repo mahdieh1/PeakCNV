@@ -88,6 +88,7 @@ To identify those CNVRs in the proximity of each other with the similar percenta
   <img src="https://user-images.githubusercontent.com/12238056/133217401-3d799fba-b066-4eb7-9553-c54bcafb0a91.png" />
 </p>
 
+(https://user-images.githubusercontent.com/12238056/142732631-9fbd0e38-1e41-46b7-8613-92aa651a100c.png)
 
 ```
 PeakCNV(2)
