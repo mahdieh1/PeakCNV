@@ -124,7 +124,7 @@ Please put input files (case.bed and control.bed) in the working directory. If y
 
 #### Output files: ####
 
-1. CNVRs (Step1.bed):
+1. CNVRs (CNVRs.bed):
 
 | Chr | Start | End | 
 | :---: | :---: | :---: |
