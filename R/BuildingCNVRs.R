@@ -48,7 +48,7 @@ BuildingCNVRs<- function()
   
   #Apply filter threshold
   print('The minimum pvalue for your data is:')  
-  Print(new.df$V8)
+  print(min(new.df$V8))
   cat("Enter thrshold for p-value : \n")
   threshold <- as.integer(readline(prompt = ""))
   #threshold=0.05;
