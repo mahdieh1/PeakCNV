@@ -56,12 +56,12 @@ BuildingCNVRs<- function()
   CNVRs<-CNVRs %>% filter(CNVRs$V3 > CNVRs$V2)
 
   write.table(CNVRs,file="CNVRs.bed", quote=F, sep="\t", row.names=F, col.names=F)
-  #Bins<-bedtools_makewindows("-b CNVRs.bed -w 1") 
-  #Bins.eval<-eval(Bins) 
-  #write.table(Bins.eval,file="Step1.bed", quote=F, sep="\t", row.names=F, col.names=F)
-  #CNVR.1<-read.table('Step1.bed')
-  #CNVR.1<-CNVR.1[,c(3,4,5)]
-  #write.table(CNVR.1,file="Step1.bed", quote=F, sep="\t", row.names=F, col.names=F)
+  Bins<-bedtools_makewindows("-b CNVRs.bed -w 1") 
+  Bins.eval<-eval(Bins) 
+  write.table(Bins.eval,file="Step1.bed", quote=F, sep="\t", row.names=F, col.names=F)
+  CNVR.1<-read.table('Step1.bed')
+  CNVR.1<-CNVR.1[,c(3,4,5)]
+  write.table(CNVR.1,file="Step1.bed", quote=F, sep="\t", row.names=F, col.names=F)
   #overlapping
   count.case1<-bedtools_intersect("-a CNVRs.bed -b case.bed -c")
   case.eval1<-eval(count.case1) 
