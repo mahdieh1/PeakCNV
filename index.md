@@ -175,7 +175,6 @@ In case of queries, please email: mahdieh.labani@students.mq.edu.au
 
 * Mahdieh Labani
 * Ali Afrasiabi
-* Shahab S.Band
 * Amin Beheshti
 * Hamid Alinejad-Rokny
  
