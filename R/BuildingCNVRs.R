@@ -51,7 +51,7 @@ BuildingCNVRs<- function()
   #print(min(new.df$V8))
   #cat("Enter thrshold for p-value : \n")
   #threshold <- as.integer(readline(prompt = ""))
-  threshold=0.05;
+  threshold=0.5;
   CNVRs <- new.df[new.df[,8]< threshold,]
   CNVRs<-CNVRs[,c(1,2,3)]
   CNVRs<-CNVRs[!duplicated(CNVRs), ]
