@@ -147,8 +147,8 @@ Please put input files (case.bed and control.bed) in the working directory. If y
 ## Reference
 ```
 Please consider citing the follow paper when you use this code.
-  Title={},
-  Authors={}
+Labani, M., Afrasiabi, A., Beheshti, A., Lovell, N. H., & Alinejad-Rokny, H. (2022). PeakCNV: A multi-feature ranking algorithm-based tool for genome-wide copy number variation-association study. Computational and Structural Biotechnology Journal, 20, 4975-4983.
+https://www.sciencedirect.com/science/article/pii/S2001037022004068
 }
 ```
 ------------------------------------------------------------------------------------------------------------------------
